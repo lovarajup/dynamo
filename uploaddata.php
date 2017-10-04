@@ -1,7 +1,7 @@
 <?php
 
     // Date now needs to be set, which I guess is a good thing!
-    date_default_timezone_set('US/Estern');
+    date_default_timezone_set('US/Eastern');
 
     // Find out what the issues are:
     ini_set('display_errors',1);
@@ -13,7 +13,7 @@
 
     $client = DynamoDbClient::factory(array(
         'region' => 'us-east-1',  // replace with your desired region
-        'version' => '2017-10-03' // Now needs a version
+        'version' => '2012-08-10' // Now needs a version
     ));
 
     # Setup some local variables for dates
